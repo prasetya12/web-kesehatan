@@ -9,6 +9,8 @@ import {
 } from "react-router-dom";
 import Home from '../src/pages/Home'
 import Artikel from '../src/pages/Artikel'
+import Kategori from './pages/Kategori';
+import DetailKategori from './pages/DetailKategori';
 
 
 function App() {
@@ -23,6 +25,8 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/artikel" element={<Artikel />} />
+            <Route path="/kategori" element={<Kategori />} />
+            <Route path="/detail" element={<DetailKategori />} />
           </Routes>
         </Router>
       </div>
