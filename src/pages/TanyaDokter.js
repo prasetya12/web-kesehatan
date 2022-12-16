@@ -3,7 +3,6 @@ import Header from "../components/Header"
 import Button from '../components/Button'
 import Modal from 'react-bootstrap/Modal';
 import axios from 'axios'
-import * as dayjs from 'dayjs'
 
 export default function TanyaDokter() {
     const [show, setShow] = useState(false);
@@ -55,10 +54,6 @@ export default function TanyaDokter() {
 
         console.log(payload)
     }
-
-
-
-
 
     return (
         <>

@@ -45,40 +45,36 @@ export default function Artikel() {
 
                 <h5 class='artikel-title'>Semua Artikel</h5>
                 <div className='carousel-artikel' >
-                    <Carousel>
-                        <Carousel.Item>
-                            <img
-                                class='img-carousel'
-                                src={'https://static.guesehat.com/static/article/cara_benar_untuk_buang_popok_masih_banyak_yang_salah_guesehat_1670423980.jpg'}
-                                alt="First slide"
-                            />
-                            <Carousel.Caption>
+                    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                            <img src='https://static.guesehat.com/static/article/cara_benar_untuk_buang_popok_masih_banyak_yang_salah_guesehat_1670423980.jpg'  class='img-carousel' alt="first"/>
+                            <div class="carousel-caption d-none d-md-block">
                                 <h3>Cara Benar Buang Popok Bayi, Masih Banyak Yang Salah ! </h3>
-                            </Carousel.Caption>
-                        </Carousel.Item>
-                        <Carousel.Item>
-                            <img
-                                class='img-carousel'
-                                src={'https://static.guesehat.com/static/article/wajah_jadi_bengkak_saat_hamil_ketahui_cara_mengatasinya_1669122867.jpg'}
-                                alt="Second slide"
-                            />
-
-                            <Carousel.Caption>
+                            </div>
+                            </div>
+                            <div class="carousel-item">
+                            <img src="https://static.guesehat.com/static/article/wajah_jadi_bengkak_saat_hamil_ketahui_cara_mengatasinya_1669122867.jpg" class="img-carousel" alt="second"/>
+                            <div class="carousel-caption d-none d-md-block">
                                 <h3>Wajah Jadi Bengkak saat Hamil, Ketahui Cara Mengatasinya</h3>
-                            </Carousel.Caption>
-                        </Carousel.Item>
-                        <Carousel.Item>
-                            <img
-                                class='img-carousel'
-                                src={'https://static.guesehat.com/static/article/tips_memilih_daycare_yang_tepat_untuk_anak_1670251607.jpg'}
-                                alt="Third slide"
-                            />
-
-                            <Carousel.Caption>
+                            </div>
+                            </div>
+                            <div class="carousel-item">
+                            <img src="https://static.guesehat.com/static/article/tips_memilih_daycare_yang_tepat_untuk_anak_1670251607.jpg" class="img-carousel" alt="third"/>
+                            <div class="carousel-caption d-none d-md-block">
                                 <h3>Tips Memilih Daycare yang Tepat untuk Anak</h3>
-                            </Carousel.Caption>
-                        </Carousel.Item>
-                    </Carousel>
+                            </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                        </div>
                 </div>
             <div class='container'>
 
