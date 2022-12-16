@@ -10,18 +10,30 @@ import Header from '../components/Header';
 
 const accordData = [
   {
+    id:"collapseOne",
+    target:"#collapseOne",
+    label:"headingOne",
     header:"Apa Penyebab Bayi Ileran ?",
     body: "Yang pertama adalah terjadinya aktivasi air liur bayi pada saat berumur 3 bulan. Dikarenakan pada usia ini, bayi telah mulai belajar mengunyah dengan cara memasukkan tangannya ke mulut. Sehingga, terjadi proses produksi air liur.   Ketika gigi mulai tumbuh untuk pertama kalinya, keadaan ini otomatis berdampak pada berlebihnya produksi air liur. Pertumbuhan gigi ini juga akan disertai oleh rasa nyeri. Akibatnya, bayi akan lebih rewel serta mengalami susah tidur.    ",
   },
   {
+    id:"collapseTwo",
+    target:"#collapseTwo",
+    label:"headingTwo",
     header:"Normalkah Bayi Banyak Mengeluarkan Air Liur ?    ",
     body: "Kelenjar liur pada bayi sebenarnya sudah aktif sejak ia masih berada di dalam rahim. Namun, kerja kelenjar air liur akan sangat aktif pada beberapa bulan pertama. Pada usia ini, bayi belum bisa menelan semua air liur yang diproduksi. Akibatnya, ia akan lebih banyak mengeluarkan air liur.    ",
   },
   {
+    id:"collapseThree",
+    target:"#collapseThree",
+    label:"headingThree",
     header:"Bagaimana jika bayi mengeluarkan air liur berlebihan? ",
     body: "Ketika mulai berusia 2–6 bulan, bayi akan lebih sering mengeluarkan air liur. Walaupun penyebabnya belum diketahui secara pasti, banyaknya air liur yang diproduksi bayi bisa jadi merupakan suatu bentuk perlindungan diri. Pada usia ini, bayi mulai sering mengeksplorasi benda di sekitarnya, bahkan memasukkan segala benda yang ia pegang ke dalam mulutnya. Protein yang ada di dalam air liur dapat melindunginya dari kuman atau kotoran yang mungkin ada pada benda-benda tersebut.",
   },
   {
+    id:"collapseFour",
+    target:"#collapseFour",
+    label:"headingFour",
     header:"Apa Tips Menangani Air Liur Berlebihan pada Bayi ?",
     body: "Agar kulit Si Kecil terhindar dari ruam yang diakibatkan oleh air liur berlebihan, Bunda harus membiasakan diri untuk rajin mengelap setiap bayi mengeluarkan air liur, ya. Bila air liur terlihat terus mengalir karena ada gigi yang tumbuh, Bunda bisa mencoba memberi sesuatu yang dingin, seperti mainan gigit atau lap basah yang sudah didinginkan, pada area gusi Si Kecil untuk membantu mengurangi nyeri yang dirasakannya. Jangan lupa untuk mengeringkan kembali mulut Si Kecil sesudahnya",
   }
@@ -51,6 +63,9 @@ export default function DetailArtikel() {
       {accordData.map((blg) => (
           <Col>
             <AccordionBasic
+              id={blg.id}
+              label={blg.label}
+              target={blg.target}
               header={blg.header}
               body={blg.body}
             />

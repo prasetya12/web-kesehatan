@@ -1,17 +1,9 @@
-
-
-import React, { useState } from 'react'
 import Carousel from 'react-bootstrap/Carousel';
 import {
-    Card,
     Row,
     Col,
-    Button
 } from "react-bootstrap";
 import Blog from "../components/Card";
-import bg1 from "../assets/images/imgcar1.jpg";
-import bg2 from "../assets/images/imgcar2.jpg";
-import bg3 from "../assets/images/imgcar3.jpg";
 import art1 from "../assets/images/artikel1.jpg";
 import art2 from "../assets/images/artikel2.jpg";
 import art3 from "../assets/images/artikel3.jpg";
@@ -32,7 +24,7 @@ const BlogData = [
         title: "Ngidam Enggak Dituruti Bikin Anak Sering Ngeces, Mitos atau Fakta?",
         subtitle: "",
         description:
-            "Mums pasti sering dengar deh mitos yang bilang kalau ngidam Mums selama hamil enggak dituruti, maka waktu si Kecil lahir, ia akan sering ngeces atau ileran.Wah, kira-kira benar enggak sih mitos yang satu ini? ",
+            "Mums pasti sering dengar deh mitos yang bilang kalau ngidam Mums selama hamil enggak dituruti, maka waktu si Kecil lahir, ia akan sering ngeces atau ileran.Wah, kira-kira benar ... ",
         btnbg: "primary",
     },
     {
@@ -50,7 +42,6 @@ export default function Artikel() {
     return (
         <>
             <Header></Header>
-
 
                 <h5 class='artikel-title'>Semua Artikel</h5>
                 <div className='carousel-artikel' >
