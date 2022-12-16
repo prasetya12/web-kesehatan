@@ -14,9 +14,9 @@ export default function Header() {
     }
     return (
         <>
-            <Navbar>
+            <Navbar className='navbar-header'>
                 <Container>
-                    <Navbar.Brand href="#home">
+                    <Navbar.Brand href="/">
                         <div className='fs-4 blue-primary fw-semibold'>
                             SehatSehat
 
@@ -24,7 +24,7 @@ export default function Header() {
                     </Navbar.Brand>
                     <Navbar.Toggle />
                     <Nav className="justify-content-end flex-grow-1 pe-3">
-                        <Nav.Link href="#home">Artikel</Nav.Link>
+                        <Nav.Link href="/artikel">Artikel</Nav.Link>
                         <Nav.Link href="#features">Info Rumah Sakit</Nav.Link>
                         <Button className="fw-normal ms-4" onClick={btnClick}>
                             Tanya Dokter
