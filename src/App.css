@@ -10,15 +10,30 @@
 .blue-primary{
   color:#1d1b84
 }
+.artikel-title{
+  color:#1d1b84;
+  text-align: center;
+  margin: 30px;
+}
 .img-kategori{
   height: 150px;
 }
 .img-detail{
-  height: 150px;
-  margin-left: 400px;
+  height: 300px;
+  margin-left: 170px;
+  width: 70%;
 }
 .style-p {
   color: #999;
+  font-size: 18px;
+  line-height: 30px;
+  margin-bottom: 20px;
+  overflow: hidden;
+  font-family: CrimsonText,Arial,sans-serif;
+  text-align: justify;
+}
+.font-p {
+  color: rgb(0, 0, 0);
   font-size: 18px;
   line-height: 30px;
   margin-bottom: 20px;
@@ -32,6 +47,10 @@
   margin-bottom: 35px;
   padding-top: 46px;
   border-top: 1px solid #eee;
+}
+.accord-style{
+  margin-bottom: 50px;
+  background-color: lightgoldenrodyellow;
 }
 .img-carousel{
   width: 1264px;

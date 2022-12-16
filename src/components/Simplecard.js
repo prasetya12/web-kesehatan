@@ -4,7 +4,7 @@ import {
 } from "react-bootstrap";
 import {Link} from "react-router-dom";
 
-const SimpleCard = (props) => {
+export default function SimpleCard(props) {
   return (
     <Link to={`/detail`} className="normal-text">
   <Card style={{marginBottom:'30px', marginTop:'50px'}}>
@@ -17,5 +17,3 @@ const SimpleCard = (props) => {
     
   );
 };
-
-export default SimpleCard;

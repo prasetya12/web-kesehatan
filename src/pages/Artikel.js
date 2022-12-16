@@ -53,7 +53,7 @@ export default function Artikel() {
 
             <div class='container'>
 
-                <h5 className="mb-3 text-center">Semua Artikel</h5>
+                <h5 class='artikel-title'>Semua Artikel</h5>
                 <div className='carousel-artikel' >
                     <Carousel>
                         <Carousel.Item>

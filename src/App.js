@@ -10,8 +10,7 @@ import {
 import Home from '../src/pages/Home'
 import Artikel from '../src/pages/Artikel'
 import Kategori from './pages/Kategori';
-import DetailKategori from './pages/DetailKategori';
-
+import DetailArtikel from './pages/DetailArtikel';
 
 function App() {
   const btnClick = () => {
@@ -26,7 +25,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/artikel" element={<Artikel />} />
             <Route path="/kategori" element={<Kategori />} />
-            <Route path="/detail" element={<DetailKategori />} />
+            <Route path="/detail" element={<DetailArtikel />} />
           </Routes>
         </Router>
       </div>
