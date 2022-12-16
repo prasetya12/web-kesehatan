@@ -11,12 +11,15 @@ import Home from '../src/pages/Home'
 import Artikel from '../src/pages/Artikel'
 import Kategori from './pages/Kategori';
 import DetailKategori from './pages/DetailKategori';
+import Hospital from './pages/Hosptal';
+import DetailHospital from './pages/DetailHospital';
+import TanyaDokter from './pages/TanyaDokter';
+
+
 
 
 function App() {
-  const btnClick = () => {
-    console.log('hao')
-  }
+
 
   return (
     <>
@@ -27,6 +30,10 @@ function App() {
             <Route path="/artikel" element={<Artikel />} />
             <Route path="/kategori" element={<Kategori />} />
             <Route path="/detail" element={<DetailKategori />} />
+            <Route path="/hospital" element={<Hospital />} />
+            <Route path="/detail-hospital/:id" element={<DetailHospital />} />
+            <Route path="/tanya-dokter" element={<TanyaDokter />} />
+
           </Routes>
         </Router>
       </div>
