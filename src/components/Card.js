@@ -1,20 +1,13 @@
-import {
-  Card,
-  Button,
-} from "react-bootstrap";
+export default function Blog (props) {
 
-const Blog = (props) => {
   return (
-    <Card>
-      <Card.Img alt="Card image cap" src={props.image} />
-      <Card.Body>
-        <Card.Title tag="h5">{props.title}</Card.Title>
-        <Card.Subtitle>{props.subtitle}</Card.Subtitle>
-        <Card.Text className="mt-3">{props.text}</Card.Text>
-        <Button color={props.color}>Read More</Button>
-      </Card.Body>
-    </Card>
+    <div class="card" style={{width: '18rem'}}>
+      <img src={props.image} alt='asdsad'></img>
+      <div class="card-body">
+        <h5 class="card-title">{props.title}</h5>
+        <p class="card-text">{props.text}</p>
+        <a href="/detail" class="btn btn-primary">Lanjut Baca</a>
+      </div>
+    </div>
   );
 };
-
-export default Blog;

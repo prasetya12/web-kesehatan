@@ -1,17 +1,9 @@
-
-
-import React, { useState } from 'react'
 import Carousel from 'react-bootstrap/Carousel';
 import {
-    Card,
     Row,
     Col,
-    Button
 } from "react-bootstrap";
 import Blog from "../components/Card";
-import bg1 from "../assets/images/imgcar1.jpg";
-import bg2 from "../assets/images/imgcar2.jpg";
-import bg3 from "../assets/images/imgcar3.jpg";
 import art1 from "../assets/images/artikel1.jpg";
 import art2 from "../assets/images/artikel2.jpg";
 import art3 from "../assets/images/artikel3.jpg";
@@ -32,7 +24,7 @@ const BlogData = [
         title: "Ngidam Enggak Dituruti Bikin Anak Sering Ngeces, Mitos atau Fakta?",
         subtitle: "",
         description:
-            "Mums pasti sering dengar deh mitos yang bilang kalau ngidam Mums selama hamil enggak dituruti, maka waktu si Kecil lahir, ia akan sering ngeces atau ileran.Wah, kira-kira benar enggak sih mitos yang satu ini? ",
+            "Mums pasti sering dengar deh mitos yang bilang kalau ngidam Mums selama hamil enggak dituruti, maka waktu si Kecil lahir, ia akan sering ngeces atau ileran.Wah, kira-kira benar ... ",
         btnbg: "primary",
     },
     {
@@ -51,51 +43,44 @@ export default function Artikel() {
         <>
             <Header></Header>
 
-            <div class='container'>
-
-                <h5 className="mb-3 text-center">Semua Artikel</h5>
+                <h5 class='artikel-title'>Semua Artikel</h5>
                 <div className='carousel-artikel' >
                     <Carousel>
                         <Carousel.Item>
                             <img
                                 class='img-carousel'
-                                src={bg1}
+                                src={'https://static.guesehat.com/static/article/cara_benar_untuk_buang_popok_masih_banyak_yang_salah_guesehat_1670423980.jpg'}
                                 alt="First slide"
                             />
                             <Carousel.Caption>
-                                <h3>First slide label</h3>
-                                <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                                <h3>Cara Benar Buang Popok Bayi, Masih Banyak Yang Salah ! </h3>
                             </Carousel.Caption>
                         </Carousel.Item>
                         <Carousel.Item>
                             <img
                                 class='img-carousel'
-                                src={bg2}
+                                src={'https://static.guesehat.com/static/article/wajah_jadi_bengkak_saat_hamil_ketahui_cara_mengatasinya_1669122867.jpg'}
                                 alt="Second slide"
                             />
 
                             <Carousel.Caption>
-                                <h3>Second slide label</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                <h3>Wajah Jadi Bengkak saat Hamil, Ketahui Cara Mengatasinya</h3>
                             </Carousel.Caption>
                         </Carousel.Item>
                         <Carousel.Item>
                             <img
                                 class='img-carousel'
-                                src={bg3}
+                                src={'https://static.guesehat.com/static/article/tips_memilih_daycare_yang_tepat_untuk_anak_1670251607.jpg'}
                                 alt="Third slide"
                             />
 
                             <Carousel.Caption>
-                                <h3>Third slide label</h3>
-                                <p>
-                                    Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-                                </p>
+                                <h3>Tips Memilih Daycare yang Tepat untuk Anak</h3>
                             </Carousel.Caption>
                         </Carousel.Item>
                     </Carousel>
                 </div>
-
+            <div class='container'>
 
                 <Row>
                     {BlogData.map((blg) => (

@@ -17,6 +17,7 @@ import TanyaDokter from './pages/TanyaDokter';
 
 
 
+import DetailArtikel from './pages/DetailArtikel';
 
 function App() {
 
@@ -33,10 +34,10 @@ function App() {
             <Route path="/hospital" element={<Hospital />} />
             <Route path="/detail-hospital/:id" element={<DetailHospital />} />
             <Route path="/tanya-dokter" element={<TanyaDokter />} />
-
-          </Routes>
-        </Router>
-      </div>
+            <Route path="/detail" element={<DetailArtikel />} />
+          </Routes >
+        </Router >
+      </div >
     </>
   )
 }
