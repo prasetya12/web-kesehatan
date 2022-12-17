@@ -1,11 +1,9 @@
-import logo from './logo.svg';
 import './App.css';
 import React from "react";
 import {
   BrowserRouter as Router,
   Routes,
-  Route,
-  Link
+  Route
 } from "react-router-dom";
 import Home from '../src/pages/Home'
 import Artikel from '../src/pages/Artikel'
