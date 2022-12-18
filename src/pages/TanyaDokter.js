@@ -52,7 +52,6 @@ export default function TanyaDokter() {
             })
 
 
-        console.log(payload)
     }
 
     return (
