@@ -22,6 +22,7 @@ export default function TanyaDokter() {
         const con_profile = JSON.parse(_profile)
         setProfile(con_profile)
         setName(con_profile.name)
+        console.log(profile)
 
     }, [])
     const getQuestion = () => {

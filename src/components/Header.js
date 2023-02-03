@@ -7,7 +7,7 @@ import Button from '../components/Button'
 import Modal from 'react-bootstrap/Modal';
 import { Button as ButtonBootstrap } from 'react-bootstrap';
 import Image from 'react-bootstrap/Image'
-import { googleLogout, useGoogleLogin } from '@react-oauth/google';
+import { useGoogleLogin } from '@react-oauth/google';
 import axios from 'axios';
 
 export default function Header() {
@@ -16,9 +16,6 @@ export default function Header() {
     const [user, setUser] = useState([]);
     const [profile, setProfile] = useState(null);
     const handleClose = () => setShow(false);
-    const handleShow = () => setShow(true);
-    const clientId = '440654611821-9do7svq98git8ngelvummt3vf3j8d5l5.apps.googleusercontent.com'
-    const [error, setError] = useState(null);
     const btnClick = () => {
         setShow(true)
         // navigate('/tanya-dokter')
