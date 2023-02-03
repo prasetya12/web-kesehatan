@@ -7,6 +7,7 @@ import axios from 'axios'
 export default function TanyaDokter() {
     const [show, setShow] = useState(false);
     const [data, setData] = useState([]);
+    const [profile, setProfile] = useState()
 
     const [name, setName] = useState('')
     const [ask, setAsk] = useState('')
@@ -16,6 +17,12 @@ export default function TanyaDokter() {
     const handleShow = () => setShow(true);
     useEffect(() => {
         getQuestion()
+
+        const _profile = localStorage.getItem("users");
+        const con_profile = JSON.parse(_profile)
+        setProfile(con_profile)
+        setName(con_profile.name)
+
     }, [])
     const getQuestion = () => {
         axios.get('https://6311f91ef5cba498da8988fd.mockapi.io/api/v1/askquestion?sortBy=id&order=desc')
@@ -74,7 +81,7 @@ export default function TanyaDokter() {
                                     A
                                 </div>
                                 <div className='ms-4'>
-                                    <div className='fw-semibold'>Buah untuk menurunkan kolesterol tinggi pada ibu hamil</div>
+                                    <div className='fw-semibold'>{item.ask}</div>
                                     <div className='align-self-end'>
                                         Oleh: {item.name}
                                     </div>

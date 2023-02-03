@@ -4,10 +4,11 @@ import carousel from "../assets/images/carousel.png";
 import doctor from "../assets/images/doctor-icon.svg";
 import hospital from "../assets/images/hospital-icon.svg";
 import axios from 'axios'
-import { Link } from 'react-router-dom';
 import Footer from '../components/Footer';
+import { useNavigate } from "react-router-dom";
 
 export default function Home() {
+    const navigate = useNavigate();
     const [news, setNews] = useState([]);
 
     useEffect(() => {
@@ -33,7 +34,10 @@ export default function Home() {
             })
     }
 
-    console.log(news, 'news')
+    const btnClick = () => {
+        navigate('/tanya-dokter')
+    }
+
 
     return (
         <>
@@ -65,7 +69,9 @@ export default function Home() {
                         style={{ width: '40px', height: '40px' }}
                     /> <span className='ms-2'>Cari Rumah Sakit</span>
                 </div>
-                <div className='p-3 blue-primary ms-5' style={{ fontSize: '14px', backgroundColor: 'white', borderRadius: '10px', cursor: 'pointer', boxShadow: 'rgba(100, 100, 111, 0.2) 0px 7px 29px 0px' }}>
+                <div className='p-3 blue-primary ms-5' style={{ fontSize: '14px', backgroundColor: 'white', borderRadius: '10px', cursor: 'pointer', boxShadow: 'rgba(100, 100, 111, 0.2) 0px 7px 29px 0px' }}
+                    onClick={btnClick}
+                >
                     <img
                         src={doctor}
                         alt="Third slide"
